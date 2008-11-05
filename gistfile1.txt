@@ -1,11 +1,11 @@
-object.* ? this seemed wrong — at least in Ruby (don't know about elsewhere), Strings/Regexes/Arrays/Hashes can be modified-in-place, changing their contents, so they aren't really "Constant" (only Fixnums are technically Constant)
-  object.string.*
-  object.regex.*
-  object.numeric.*
-  object.enumerable.*
-    object.enumerable.array.*
-    object.enumerable.hash.*
-  object…
+literal.*
+  literal.string.*
+  literal.regex.*
+  literal.numeric.*
+  literal.enumerable.*
+    literal.enumerable.array.*
+    literal.enumerable.hash.*
+  literal…
   
 identifier.* 
   identifier.function.* ? how would this be different from block.function?
