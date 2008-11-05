@@ -1,0 +1,52 @@
+constant.* ? this name seems wrong — at least in Ruby (don't know about elsewhere), Strings/Regexes/Arrays/Hashes can be modified-in-place, changing their contents, so they aren't really "Constant"  (only Fixnums are technically Constant)
+  constant.string.*
+  constant.regex.*
+  constant.numeric.*
+  constant.enumerable.*
+    constant.enumerable.array.*
+    constant.enumerable.hash.*
+  constant…
+  
+identifier.* 
+  identifier.function.* ? how would this be different from block.function?
+  identifier.variable.* - $var, @var, @@var, Var (also known as a 'constant' in some languages)
+  identifier.namespace.* ? i don't understand what this is for
+  identifier…
+  
+keyword.*
+  keyword.control.* - used for loops, conditionals and general flow control (while, for, break, goto, if, else, rescue, raise, etc)
+  keyword.modifier.* - used for tacking onto declarations (abstract, public, private, etc)
+  keyword.definition.* - used for creating or modifying a block.* element (class, function, def, module, begin, lambda)
+  keyword.type.* ? what about for non-strongly-typed languages? is there a way to make this more 'global' and useful to them as well?
+  keyword.constant.* - nil, true, false, undefined, NaN, etc
+  keyword…
+  
+block.* - used for anything that attaches a block of code to something, such as a definition, iterator, or closure
+  block.typedef.*
+    block.typedef.class.*
+    block.typedef.module.*
+    block.typedef.prototype.*
+  block.function.*
+  block.iterator.* - better and more common name for a block of code operating on an enumerable
+  block.closure.* - any block of code that acts as exactly that, a block of code packaged into a variable (lambda {} in Ruby, anonymous function in JavaScript)
+  block…
+
+metadata.* - for information that will be ignored by the compiler/interpreter
+  metadata.comment.*
+    metadata.comment.line.*
+      metadata.comment.shebang.*
+    metadata.comment.block.*
+      metadata.comment.block.documentation.* - comments formulated in a way accepted by the community to be documentation-blocks
+  metadata.preprocessor.* - C-style preprocessor operatives, such as #define or #ifdef
+  metadata…
+
+punctuation.*
+  punctuation.operator.* - for example + / :: -> < => == ===, etc
+  punctuation.operator.comparator.* - < > <= >= ==
+    punctuation.operator.setter.* - = += -= *= ||=
+    punctuation.operator.math.* - + - * / %
+    punctuation.operator.logical.* - !! && || ^ ! & |
+  punctuation.bracket.* - (brackets) [of] {all} |different| /kinds/ 'and' "flavours"
+    punctuation.bracket.quote.double - "these"
+    punctuation.bracket.quote.single - 'these'
+  punctuation…
