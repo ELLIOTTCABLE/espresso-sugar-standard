@@ -5,13 +5,13 @@ ambiguous, as most languages which Espresso users will often come across, a
 constant means something else entirely (see `keyword.constant`).
 
 - <b>literal.*</b>
-  - <b>literal.string.*</b>
-  - <b>literal.regex.*</b>
-  - <b>literal.numeric.*</b>
+  - <b>literal.string.*</b> - "hello world"
+  - <b>literal.regex.*</b> - /^([\w]+).*$/
+  - <b>literal.numeric.*</b> - 1 22 35.124 1.54e9
   - <b>literal.enumerable.*</b>
     - <b>literal.enumerable.set.*</b>
-    - <b>literal.enumerable.array.*</b>
-    - <b>literal.enumerable.dictionary.*</b>
+    - <b>literal.enumerable.array.*</b> - [1, 2, 3]
+    - <b>literal.enumerable.dictionary.*</b> - hash (ruby), dict (python), assoc-array (php)
 
 # Identifiers
 An identifier is a syntatical element that uniquely identifies one object of
@@ -21,8 +21,10 @@ can be referenced in some way.
 
 - - <b>identifier.*</b> 
   - <b>identifier.function.*</b> `func(1, 2, 3)`, referring to a identifier that points to a specific function - such as a function/method call
-  - <b>identifier.variable.*</b> - $var, @var, @@var, Var
-    - <b>identifier.variable.constant.*</b> - $var, Var
+    - <b>identifier.function.support.*</b> - malloc, printf (C) - strstr, array (PHP) - built-in functions
+  - <b>identifier.variable.*</b>
+    - <b>identifier.variable.constant.*</b> - Var, VAR
+    - <b>identifier.variable.global.*</b> - $var (ruby), $_VAR (php)
 
 # Keywords
 A keyword is an element defined in the language's definition itself - it can't
@@ -72,7 +74,7 @@ a Hash (literal.enumerable.dictionary) or a function definition or a horde of
 other things.
 
 - - <b>punctuation.*</b>
-  - <b>punctuation.operator.*</b> - for example + / :: -> < => == ===, etc
+  - <b>punctuation.operator.*</b> - for example + / -> < => == ===, etc
     - <b>punctuation.operator.comparator.*</b> - < > <= >= ==
     - <b>punctuation.operator.setter.*</b> - = += -= *= ||=
     - <b>punctuation.operator.mathematical.*</b> - + - * / %
