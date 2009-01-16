@@ -7,7 +7,14 @@ constant means something else entirely (see `keyword.constant`).
 - <b>literal</b>
   - <b>literal.string.*:</b> `"hello world"`
   - <b>literal.regex.*:</b> `/^([\w]+).*$/`
-  - <b>literal.numeric:</b> `1 22 35.124 1.54e9`
+  - <b>literal.numeric</b>
+    - <b>literal.numeric.integer:</b>
+      - <b>literal.numeric.integer.binary.*:</b> `0b1`, `0b101010`, and in some languages `-0b1000`
+      - <b>literal.numeric.integer.decimal.*:</b> `1`, `42`, and in some languages `-8`
+      - <b>literal.numeric.integer.octal.*:</b> `01`, `052`, and in some languages `-010`
+      - <b>literal.numeric.integer.hex.*:</b> `0x1`, `0x2A`, and in some languages `-0x8`
+    - <b>literal.numeric.float.*:</b> `1.0`, `4.2`, and in some languages `-8.8`
+    - <b>literal.numeric.exponent.*:</b> `e1`, `e42` _(should identify the exponential part of the literal, not the entire literal)_
   - <b>literal.collection</b>
     - <b>literal.collection.set.*:</b> _(I don't actually know of any language that has a literal construct for a set, but if one does, it would go here)_
     - <b>literal.collection.array.*:</b> `[1, 2, 3]`
