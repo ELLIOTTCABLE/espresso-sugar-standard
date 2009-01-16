@@ -61,10 +61,10 @@ heading, but there may be such things.
 - - <b>metadata.*</b> - for information that will be ignored by the compiler/interpreter
   - <b>metadata.comment.*</b>
     - <b>metadata.comment.line.*</b>
-      - <b>metadata.comment.line.shebang.*</b>
     - <b>metadata.comment.block.*</b>
       - <b>metadata.comment.block.documentation.*</b> - comments formulated in a way accepted by the community to be documentation-blocks
   - <b>metadata.preprocessor.*</b> - C-style preprocessor operatives, such as #define or #ifdef
+  - <b>metadata.shebang.*</b>
 
 # Punctuation
 These bits will often be parts of another structure, such as {} being part of
