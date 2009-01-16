@@ -8,10 +8,10 @@ constant means something else entirely (see `keyword.constant`).
   - <b>literal.string.*:</b> `"hello world"`
   - <b>literal.regex.*:</b> `/^([\w]+).*$/`
   - <b>literal.numeric.*:</b> `1 22 35.124 1.54e9`
-  - <b>literal.enumerable.*</b>
-    - <b>literal.enumerable.set.*</b>
-    - <b>literal.enumerable.array.*:</b> `[1, 2, 3]`
-    - <b>literal.enumerable.dictionary.*::</b> `Hash` in Ruby, `dict` in Python, `array()` in PHP
+  - <b>literal.collection.*</b>
+    - <b>literal.collection.set.*:</b> _(I don't actually know of any language that has a literal construct for a set, but if one does, it would go here)_
+    - <b>literal.collection.array.*:</b> `[1, 2, 3]`
+    - <b>literal.collection.dictionary.*::</b> `Hash` in Ruby, `dict` in Python, `array()` in PHP
 
 # Identifiers
 An identifier is a syntatical element that uniquely identifies one object of
