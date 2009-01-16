@@ -71,25 +71,30 @@ heading, but there may be such things.
     - <b>metadata.processing.shebang.*:</b> `#!/usr/bin/env ruby -Ku` _(UNIX shell scripting shebangs)_
     - <b>metadata.processing.magic-comment.*</b> `# -*-mode: tcl; fill-column: 75; tab-width: 8; coding: iso-latin-1-unix -*- ` in emacs or `# encoding: utf-8` in Ruby _(other sorts of magic comments that affect the code)_
 
-# Punctuation
-These bits will often be parts of another structure, such as {} being part of
-a Hash (literal.enumerable.dictionary) or a function definition or a horde of
-other things.
+# Operators
+The difference between operators and keywords bears some discussing. Operators
+are almost always punctuation, whereas keywords are almost always textual.
+There are exceptions to this rule (`and` and `or` are operators, because
+they're simply alternatives to `&&` and `||`), but it's a good generalization.
 
-- - <b>punctuation.*</b>
-  - <b>punctuation.operator.*</b>
-    - <b>punctuation.operator.comparator.*:</b> `<`, `>`, `<=`, `>=`, `==`, `===`
-    - <b>punctuation.operator.setter.*:</b> `=`, `+=`, `-=`, `*=`, `||=`
-    - <b>punctuation.operator.mathematical.*:</b> `+`, `-`, `*`, `/`, `%`
-    - <b>punctuation.operator.logical.*:</b> `!!`, `&&`, `||`, `^`, `!`, `&`, `|`
-  - <b>punctuation.delimiter.*</b>
-    - <b>punctuation.delimiter.balanced.*:</b> _(each of these might include 'start' and 'end' varieties, and could tie into any dynamic delimeter-balancing functionality offered by Espresso)_
-      - <b>punctuation.delimiter.balanced.parenthesis.*:</b> `(these)`
-      - <b>punctuation.delimiter.balanced.square-brace.*:</b> `[these]`
-      - <b>punctuation.delimiter.balanced.curly-brace.*:</b> `{these}`
-    - <b>punctuation.delimiter.seperator.*</b>
-      - <b>punctuation.delimiter.seperator.property-of.*:</b> `::` in ruby
-      - <b>punctuation.delimiter.seperator.comma.*:</b> `,`
-  - <b>punctuation.quote.*</b>
-    - <b>punctuation.quote.double:</b> `"these"`
-    - <b>punctuation.quote.single:</b> `'these'`
+- <b>operator.*</b>
+  - <b>operator.comparator.*:</b> `<`, `>`, `<=`, `>=`, `==`, `===`
+  - <b>operator.setter.*:</b> `=`, `+=`, `-=`, `*=`, `||=`
+  - <b>operator.mathematical.*:</b> `+`, `-`, `*`, `/`, `%`
+  - <b>operator.logical.*:</b> `!!`, `&&`, `||`, `^`, `!`, `&`, `|`
+
+# Delimiters
+Delimiters are things that, well, delimit. They mark the edges of things,
+where one thing becomes another, or where two things become one.
+
+- <b>delimiter.*</b>
+  - <b>delimiter.balanced.*</b>
+    - <b>delimiter.balanced.quote.*</b>
+      - <b>delimiter.quote.balanced.double:</b> `"these"`
+      - <b>delimiter.quote.balanced.single:</b> `'these'`
+    - <b>delimiter.balanced.parenthesis.*:</b> `(these)`
+    - <b>delimiter.balanced.square-brace.*:</b> `[these]`
+    - <b>delimiter.balanced.curly-brace.*:</b> `{these}`
+  - <b>delimiter.seperator.*</b>
+    - <b>delimiter.seperator.property-of.*:</b> `::` in ruby
+    - <b>delimiter.seperator.comma.*:</b> `,`
