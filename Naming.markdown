@@ -102,6 +102,7 @@ where one thing becomes another, or where two things become one.
     - <b>delimiter.balanced.quote</b>
       - <b>delimiter.quote.balanced.double:</b> `"these"`
       - <b>delimiter.quote.balanced.single:</b> `'these'`
+      - <b>delimiter.quote.balanced.backtick:</b> `` `these` ``
     - <b>delimiter.balanced.parenthesis:</b> `(these)`
     - <b>delimiter.balanced.square-brace:</b> `[these]`
     - <b>delimiter.balanced.curly-brace:</b> `{these}`
