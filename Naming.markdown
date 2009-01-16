@@ -9,6 +9,7 @@ constant means something else entirely (see `keyword.constant`).
   - <b>literal.regex.*</b>
   - <b>literal.numeric.*</b>
   - <b>literal.enumerable.*</b>
+    - <b>literal.enumerable.set.*</b>
     - <b>literal.enumerable.array.*</b>
     - <b>literal.enumerable.dictionary.*</b>
 
