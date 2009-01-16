@@ -52,19 +52,20 @@ hardcoded into the language's compiler/parser/interpreter.
   - <b>keyword.definition.*:</b> `class`, `function`, `method`, `module`, `begin`, `lambda` _(used for creating or modifying a <b>block.*</b> element)_
   - <b>keyword.type.*</b>
 
-# Blocks
+# Vessels
 These are less being defined for the purpose of highlighting, and more for use
-in attaching Itemizers, and for the purpose of the subzones. Anything that is
-a block of code should go here.
+in attaching Itemizers, and for the purpose of the subzones. Any syntactical
+construct that is meant to seperate out a piece of code from other code, goes
+here.
 
-- - <b>block:</b> _(used for anything that attaches a block of code to something, such as a definition, iterator, or closure)_
-  - <b>block.typedef</b>
-    - <b>block.typedef.class.*</b>
-    - <b>block.typedef.module.*</b>
-    - <b>block.typedef.prototype.*</b>
-  - <b>block.function.*</b>
-  - <b>block.iterator.*</b>
-  - <b>block.closure.*:</b> `lambda {}` in Ruby, anonymous function in JavaScript _(any block of code that acts as exactly that, a block of code packaged into a variable)_
+- - <b>vessel:</b>
+  - <b>vessel.typedef</b>
+    - <b>vessel.typedef.class.*</b>
+    - <b>vessel.typedef.module.*</b>
+    - <b>vessel.typedef.prototype.*</b>
+  - <b>vessel.function.*</b>
+  - <b>vessel.iterator.*</b>
+  - <b>vessel.block.*:</b> `lambda {}` in Ruby, anonymous function in JavaScript _(any block of code that acts as exactly that, a block of code packaged into a variable)_
 
 # Metadata
 This is mostly for comments - I can't think of anything else to go under this
