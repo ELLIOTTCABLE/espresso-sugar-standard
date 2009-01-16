@@ -77,11 +77,15 @@ other things.
     - <b>punctuation.operator.setter.*</b> - = += -= *= ||=
     - <b>punctuation.operator.mathematical.*</b> - + - * / %
     - <b>punctuation.operator.logical.*</b> - !! && || ^ ! & |
-  - <b>punctuation.bracket.*</b> - (brackets) [of] {all} |different| /kinds/ 'and' "flavours"
-    - <b>punctuation.bracket.quote*</b>
-      - <b>punctuation.bracket.quote.double</b> - "these"
-      - <b>punctuation.bracket.quote.single</b> - 'these'
-    - <b>punctuation.bracket.balanced.*</b>
-      - <b>punctuation.bracket.balanced.parenthesis.*</b> - (these)
-      - <b>punctuation.bracket.balanced.square.*</b> - [these]
-      - <b>punctuation.bracket.balanced.curly.*</b> - {these}
+  - <b>punctuation.delimiter.*</b>
+    - <b>punctuation.delimiter.balanced.*</b> - each of these might include 'start' and 'end' varieties, and could tie into any dynamic delimeter-balancing functionality offered by Espresso
+      - <b>punctuation.delimiter.balanced.parenthesis.*</b>
+      - <b>punctuation.delimiter.balanced.square-brace.*</b>
+      - <b>punctuation.delimiter.balanced.curly-brace.*</b>
+    - <b>punctuation.delimiter.seperator.*</b>
+      - <b>punctuation.delimiter.seperator.property-of.*</b> - such as `::` from ruby
+      - <b>punctuation.delimiter.seperator.comma.*</b> - `,`
+      - <b>punctuation.delimiter.seperator.*</b> - such as `::` from ruby
+  - <b>punctuation.quote.*</b>
+    - <b>punctuation.quote.double</b> - "these"
+    - <b>punctuation.quote.single</b> - 'these'
