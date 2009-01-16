@@ -12,6 +12,9 @@ constant means something else entirely (see `keyword.constant`).
     - <b>literal.collection.set.*:</b> _(I don't actually know of any language that has a literal construct for a set, but if one does, it would go here)_
     - <b>literal.collection.array.*:</b> `[1, 2, 3]`
     - <b>literal.collection.dictionary.*::</b> `Hash` in Ruby, `dict` in Python, `array()` in PHP
+  - <b>literal.keyword.*:</b> _(any value that acts as a keyword but returns a single, known value)_
+    - <b>literal.keyword.bool.*:</b> `true`, `false`
+    - <b>literal.keyword.nothing.*:</b> `nil`, `NULL`, `undefined`, `NaN`
 
 # Identifiers
 An identifier is a syntatical element that uniquely identifies one object of
@@ -39,8 +42,6 @@ hardcoded into the language's compiler/parser/interpreter.
     - <b>keyword.modifier.scope.*:</b> `public`, `protected`, `private` _(changes the 'scope' of a particular declaration)_
   - <b>keyword.definition.*:</b> `class`, `function`, `method`, `module`, `begin`, `lambda` _(used for creating or modifying a <b>block.*</b> element)_
   - <b>keyword.type.*</b>
-  - <b>keyword.literal.*</b>
-    - <b>keyword.literal.constant.*:</b> `nil`, `true`, `false`, `undefined`, `NaN`, `NULL` _(any value that acts as a literal for a value that doesn't change under any circumstances)_
 
 # Blocks
 These are less being defined for the purpose of highlighting, and more for use
