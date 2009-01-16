@@ -19,7 +19,7 @@ Language definition of 'object', this also means anything in a language which
 can be referenced in some way.
 
 - - <b>identifier.*</b> 
-  - <b>identifier.function.*:</b> `func(1, 2, 3)`, referring to a identifier that points to a specific function - such as a function/method call
+  - <b>identifier.function.*</b> `func(1, 2, 3)`, referring to a identifier that points to a specific function - such as a function/method call
   - <b>identifier.variable.*</b> - $var, @var, @@var, Var
     - <b>identifier.variable.constant.*</b> - $var, Var
 
