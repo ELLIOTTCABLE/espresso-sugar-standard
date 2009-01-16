@@ -80,7 +80,7 @@ they're simply alternatives to `&&` and `||`), but it's a good generalization.
 
 - <b>operator.*</b>
   - <b>operator.comparator.*:</b> `<`, `>`, `<=`, `>=`, `==`, `===`
-  - <b>operator.accessor.*:</b> `=`, `+=`, `-=`, `*=`, `||=` _(for getters/setters/assignment)_
+  - <b>operator.accessor.*:</b> `=`, `+=`, `-=`, `*=`, `||=`, as well as `*var` and `&var` from C _(for getters/setters/assignments)_
   - <b>operator.mathematical.*:</b> `+`, `-`, `*`, `/`, `%`
   - <b>operator.logical.*:</b> `!!`, `&&`, `||`, `^`, `!`, `&`, `|`
 
