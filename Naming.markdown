@@ -87,7 +87,6 @@ other things.
     - <b>punctuation.delimiter.seperator.*</b>
       - <b>punctuation.delimiter.seperator.property-of.*:</b> `::` in ruby
       - <b>punctuation.delimiter.seperator.comma.*:</b> `,`
-      - <b>punctuation.delimiter.seperator.*:</b> `::` in ruby
   - <b>punctuation.quote.*</b>
     - <b>punctuation.quote.double:</b> `"these"`
     - <b>punctuation.quote.single:</b> `'these'`
