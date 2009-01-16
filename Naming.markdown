@@ -28,6 +28,8 @@ can be referenced in some way.
   - <b>identifier.variable.*</b>
     - <b>identifier.variable.constant.*:</b> `Var`, `VAR`
     - <b>identifier.variable.global.*:</b> `$var` in Ruby, `$_VAR` in PHP
+    - <b>identifier.variable.instance.*:</b> `@var`, `@@var`
+    - <b>identifier.variable.local.*:</b> `var`
 
 # Keywords
 A keyword is an element defined in the language's definition itself - it can't
