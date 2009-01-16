@@ -64,7 +64,8 @@ heading, but there may be such things.
   - <b>metadata.comment.*</b>
     - <b>metadata.comment.line.*</b>
     - <b>metadata.comment.block.*</b>
-      - <b>metadata.comment.block.documentation.*:</b> RDoc/YARD, JavaDoc, phpDocumentor comments _(comments formulated in a way accepted by the community and documentation-generating-tools to be documentation-blocks)_
+    - <b>metadata.comment.documentation.*:</b> RDoc/YARD, JavaDoc, phpDocumentor comments _(comments formulated in a way accepted by the community and documentation-generating-tools to be documentation-blocks)_
+      - <b>metadata.comment.documentation.tag.*:</b> `@name`, `@description` _(tags of which the widly-accepted documentation-generators are aware, which control the generated documentation)_
   - <b>metadata.preprocessor.*:</b> `#define`, `#ifdef` _(C-style preprocessor operatives)_
   - <b>metadata.shebang.*</b>
 
