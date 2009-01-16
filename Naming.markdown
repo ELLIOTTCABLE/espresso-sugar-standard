@@ -66,8 +66,10 @@ heading, but there may be such things.
     - <b>metadata.comment.block.*</b>
     - <b>metadata.comment.documentation.*:</b> RDoc/YARD, JavaDoc, phpDocumentor comments _(comments formulated in a way accepted by the community and documentation-generating-tools to be documentation-blocks)_
       - <b>metadata.comment.documentation.tag.*:</b> `@name`, `@description` _(tags of which the widly-accepted documentation-generators are aware, which control the generated documentation)_
-  - <b>metadata.preprocessor.*:</b> `#define`, `#ifdef` _(C-style preprocessor operatives)_
-  - <b>metadata.shebang.*</b>
+  - <b>metadata.processing.*:</b> _(anything that changes the way code is compiled/interpreted, but isn't code itself)_
+    - <b>metadata.processing.preprocessor.*:</b> `#define`, `#ifdef` _(C-style preprocessor operatives)_
+    - <b>metadata.processing.shebang.*:</b> `#!/usr/bin/env ruby -Ku` _(UNIX shell scripting shebangs)_
+    - <b>metadata.processing.magic-comment.*</b> `# -*-mode: tcl; fill-column: 75; tab-width: 8; coding: iso-latin-1-unix -*- ` in emacs or `# encoding: utf-8` in Ruby _(other sorts of magic comments that affect the code)_
 
 # Punctuation
 These bits will often be parts of another structure, such as {} being part of
