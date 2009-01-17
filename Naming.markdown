@@ -62,7 +62,6 @@ here.
   - <b>vessel.class.*</b>
   - <b>vessel.module.*</b>
   - <b>vessel.function.*</b>
-  - <b>vessel.iterator.*</b>
   - <b>vessel.block.*:</b> `lambda {}` in Ruby, anonymous function in JavaScript _(any block of code that acts as exactly that, a block of code packaged into a variable)_
 
 # Metadata
