@@ -29,7 +29,7 @@ some sort in the language. This isn't restricted to the Object-Oriented
 Language definition of 'object', this also means anything in a language which
 can be referenced in some way.
 
-- - <b>identifier</b> 
+- <b>identifier</b> 
   - <b>identifier.function:</b> `func(1, 2, 3)` _(referring to a identifier that points to a specific function - such as a function/method call)_
     - <b>identifier.function.support.*:</b> `malloc()` and `printf()` in C, `strstr()` and `array()` in PHP _(built-in functions)_
   - <b>identifier.variable.*</b>
@@ -43,7 +43,7 @@ A keyword is an element defined in the language's definition itself - it can't
 be changed by the programmer, and it usually invokes or references something
 hardcoded into the language's compiler/parser/interpreter.
 
-- - <b>keyword</b>
+- <b>keyword</b>
   - <b>keyword.control:</b> _(used for loops, conditionals and general flow control)_
     - <b>keyword.control.exception.*:</b> `raise`, `rescue`, `ensure`, `throw`, `catch` _(used to manage exceptions)_
     - <b>keyword.control.flow.*:</b> `while`, `for`, `break`, `goto`, `if`/`then`/`else` _(changes the 'direction' of / current location in the executing code)_
@@ -58,7 +58,7 @@ in attaching Itemizers, and for the purpose of the subzones. Any syntactical
 construct that is meant to seperate out a piece of code from other code, goes
 here.
 
-- - <b>vessel:</b>
+- <b>vessel:</b>
   - <b>vessel.class.*</b>
   - <b>vessel.module.*</b>
   - <b>vessel.function.*</b>
@@ -68,7 +68,7 @@ here.
 This is mostly for comments - I can't think of anything else to go under this
 heading, but there may be such things.
 
-- - <b>metadata.*:</b> _(for information that will be ignored by the compiler/interpreter, or has semantic meaning beyond that involved in it's normal execution)_
+- <b>metadata.*:</b> _(for information that will be ignored by the compiler/interpreter, or has semantic meaning beyond that involved in it's normal execution)_
   - <b>metadata.comment</b>
     - <b>metadata.comment.line.*</b>
     - <b>metadata.comment.block.*</b>
