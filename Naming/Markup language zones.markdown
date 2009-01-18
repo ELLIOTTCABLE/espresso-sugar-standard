@@ -1,6 +1,6 @@
 Markup language zone naming policies
 ====================================
-See the header of [programming language zone naming policies.markdown](Programming language zones.markdown)
+See the header of [programming language zone naming policies.markdown](./Programming%20language%20zones.markdown)
 for some important notes.
 
 Stylistic
