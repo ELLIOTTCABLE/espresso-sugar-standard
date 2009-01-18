@@ -115,10 +115,10 @@ hardcoded into the language's compiler/parser/interpreter.
 - `keyword`
   - `keyword.control`: _(used for loops, conditionals and general flow control)_
     - `keyword.control.exception...`: `raise`, `rescue`, `ensure`, `throw`, `catch` _(used to manage exceptions)_
-    - `keyword.control.flow...`: `while`, `for`, `break`, `goto`, `if`/`then`/`else` _(changes the 'direction' of / current location in the executing code)_
+    - `keyword.control.flow...`: `while`, `for`, `break`, `goto`, `if`/`then`/`else`, `begin...end` _(changes the 'direction' of / current location in the executing code)_
   - `keyword.modifier...`: _(used for tacking onto declarations)_
     - `keyword.modifier.scope...`: `public`, `protected`, `private` _(changes the 'scope' of a particular declaration)_
-  - `keyword.definition...`: `class`, `function`, `method`, `module`, `begin`, `lambda` _(used for creating or modifying a `block...` element)_
+  - `keyword.definition...`: `class`, `function`, `method`, `module`, `lambda` _(used for creating or modifying a `vessel`)_
 
 Vessels
 -------
