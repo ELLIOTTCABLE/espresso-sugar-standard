@@ -138,6 +138,7 @@ This is mostly for comments - I can't think of anything else to go under this
 heading, but there may be such things.
 
 - `metadata...`: _(for information that will be ignored by the compiler/interpreter, or has semantic meaning beyond that involved in it's normal execution)_
+  - `metadata.type-signature`: `map :: (a -> b) -> [a] -> [b]` from Haskell
   - `metadata.comment`
     - `metadata.comment.line...`
     - `metadata.comment.block...`
