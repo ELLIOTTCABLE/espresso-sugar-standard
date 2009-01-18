@@ -61,7 +61,7 @@ here.
 - <b>vessel:</b>
   - <b>vessel.class.*</b>
   - <b>vessel.function.*</b>
-  - <b>vessel.block.*:</b> `lambda {}` in Ruby, anonymous function in JavaScript _(any block of code that acts as exactly that, a block of code packaged into a variable)_
+  - <b>vessel.block.*:</b> `lambda {}` in Ruby, anonymous function in JavaScript, closures in many other languages _(any block of code that acts as exactly that, a block of code)_
 
 # Metadata
 This is mostly for comments - I can't think of anything else to go under this
