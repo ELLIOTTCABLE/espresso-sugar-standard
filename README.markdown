@@ -10,6 +10,17 @@ of Espresso themes will play well with the vast majority of Espresso Sugars.
   [Espresso]: <http://macrabbit.com/espresso/> "MacRabbit's Espresso text editor"
   [Sugars]: <http://macrabbit.com/espresso/extend/> "Sugar plug-ins for Espresso"
 
+Usage
+-----
+Don't utilize this repository in your Sugar development, everything here is in
+a state of flux. Each 'finished' release will be posted to the forums, please
+build your sugars by the rules provided there. After a 'finished' release,
+changes will continue to be made to this repository, which will be then
+released as a new 'version' of the specification. Sugar developers and themers
+should only work off of the latest release version, and they should mention
+which version they adhere to (so that a user can tell which themes will fully
+style which Sugars).
+
 Ownership
 ---------
 Primarily, this is a repository created by myself (elliottcable) to display
