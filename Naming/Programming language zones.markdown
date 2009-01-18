@@ -142,7 +142,6 @@ heading, but there may be such things.
     - `metadata.comment.line...`
     - `metadata.comment.block...`
     - `metadata.comment.documentation...`: RDoc/YARD, JavaDoc, phpDocumentor comments _(comments formulated in a way accepted by the community and documentation-generating-tools to be documentation-blocks)_
-      - `metadata.comment.documentation.tag...`: `@name`, `@description` _(tags of which the widly-accepted documentation-generators are aware, which control the generated documentation)_
   - `metadata.processing`: _(anything that changes the way code is compiled/interpreted, but isn't code itself)_
     - `metadata.processing.preprocessor...`: `#define`, `#ifdef` _(C-style preprocessor operatives)_
     - `metadata.processing.shebang...`: `#!/usr/bin/env ruby -Ku` _(UNIX shell scripting shebangs)_
