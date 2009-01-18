@@ -120,17 +120,17 @@ hardcoded into the language's compiler/parser/interpreter.
     - `keyword.modifier.scope...`: `public, protected, private` (changes the 'scope' of a particular declaration)
   - `keyword.definition...`: `class, function, method, module, lambda` (used for creating or modifying a `vessel`)
 
-Vessels
--------
+Containers
+----------
 These are less being defined for the purpose of highlighting, and more for use
 in attaching Itemizers, and for the purpose of the subzones. Any syntactical
 construct that is meant to seperate out a piece of code from other code, goes
 here.
 
-- `vessel`:
-  - `vessel.class...`
-  - `vessel.function...`
-  - `vessel.block...`: `lambda {}` in Ruby, anonymous function in JavaScript, closures in many other languages (any block of code that acts as exactly that, a block of code)
+- `container`:
+  - `container.class...`
+  - `container.function...`
+  - `container.block...`: `lambda {}` in Ruby, anonymous function in JavaScript, closures in many other languages (any block of code that acts as exactly that, a block of code)
 
 Metadata
 --------
