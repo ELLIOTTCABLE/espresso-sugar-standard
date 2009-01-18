@@ -1,5 +1,5 @@
-Programming Language Naming Policies — Capture Naming
-=====================================================
+Capture naming policies
+=======================
 The naming of captures isn't nearly as important as the naming of zones, but
 it still bears some consideration.
 

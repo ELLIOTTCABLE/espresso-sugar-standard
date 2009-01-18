@@ -1,5 +1,5 @@
-Programming Language Naming Policies — Zone Naming
-==================================================
+Programming language zone naming policies
+=========================================
 This document's purpose is to regulate the 'naming' of [syntax 'zones'][] in
 [Espresso][] [Sugars][]. Each 'zone' in an Espresso Sugar has it's own,
 unique, identifier. This identifier is composed of 'classes', separated by
