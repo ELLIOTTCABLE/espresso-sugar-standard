@@ -99,6 +99,7 @@ can be referenced in some way.
 
 - `identifier` 
   - `identifier.function`: `func(1, 2, 3)` _(referring to a identifier that points to a specific function - such as a function/method call)_
+  - `identifier.type`: `NSString`, `HTTP`, `Fixnum`, `double` _(an umbrella for 'prototypes', 'classes', 'types', and any other language feature that serves a similar purpose)_
   - `identifier.variable...`
     - `identifier.variable.constant...`: `Var`, `VAR`
     - `identifier.variable.global...`: `$var` in Ruby, `$_VAR` in PHP
@@ -118,7 +119,6 @@ hardcoded into the language's compiler/parser/interpreter.
   - `keyword.modifier...`: _(used for tacking onto declarations)_
     - `keyword.modifier.scope...`: `public`, `protected`, `private` _(changes the 'scope' of a particular declaration)_
   - `keyword.definition...`: `class`, `function`, `method`, `module`, `begin`, `lambda` _(used for creating or modifying a `block...` element)_
-  - `keyword.type...`
 
 Vessels
 -------
