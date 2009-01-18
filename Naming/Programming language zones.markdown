@@ -90,21 +90,21 @@ constant means something else entirely (see `keyword.constant`).
     - `literal.keyword.bool...`: `true`, `false`
     - `literal.keyword.nothing...`: `nil`, `NULL`, `undefined`, `NaN`
 
-Identifiers
------------
-An identifier is a syntatical element that uniquely identifies one object of
-some sort in the language. This isn't restricted to the Object-Oriented
-Language definition of 'object', this also means anything in a language which
-can be referenced in some way.
+Handle
+------
+A handle is a syntatical element that uniquely identifies one object of some
+sort in the language. This isn't restricted to the Object-Oriented Language
+definition of 'object', this also means anything in a language which can be
+referenced in some way. There are some examples below.
 
-- `identifier` 
-  - `identifier.function`: `func(1, 2, 3)` _(referring to a identifier that points to a specific function - such as a function/method call)_
-  - `identifier.type`: `NSString`, `HTTP`, `Fixnum`, `double` _(an umbrella for 'prototypes', 'classes', 'types', and any other language feature that serves a similar purpose)_
-  - `identifier.variable...`
-    - `identifier.variable.constant...`: `Var`, `VAR`
-    - `identifier.variable.global...`: `$var` in Ruby, `$_VAR` in PHP
-    - `identifier.variable.instance...`: `@var`, `@@var`
-    - `identifier.variable.local...`: `var`
+- `handle` 
+  - `handle.function`: `func()` _(referring to a handle that points to a specific function - such as a function/method call)_
+  - `handle.type`: `NSString`, `HTTP`, `Fixnum`, `double` _(an umbrella for 'prototypes', 'classes', 'types', and any other language feature that serves a similar purpose)_
+  - `handle.variable...`
+    - `handle.variable.constant...`: `Var`, `VAR`
+    - `handle.variable.global...`: `$var` in Ruby, `$_VAR` in PHP
+    - `handle.variable.instance...`: `@var`, `@@var`
+    - `handle.variable.local...`: `var`
 
 Keywords
 --------
