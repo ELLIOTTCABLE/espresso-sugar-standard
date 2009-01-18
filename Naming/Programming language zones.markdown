@@ -71,24 +71,24 @@ some languages, these might be called constants - however, I consider that too
 ambiguous, as most languages which Espresso users will often come across, a
 constant means something else entirely (see `keyword.constant`).
 
-- <b>literal</b>
-  - <b>literal.string...:</b> `"hello world"`
-  - <b>literal.regex...:</b> `/^([\w]+).*$/`
-  - <b>literal.numeric</b>
-    - <b>literal.numeric.integer:</b>
-      - <b>literal.numeric.integer.binary...:</b> `0b1`, `0b101010`, and in some languages `-0b1000`
-      - <b>literal.numeric.integer.decimal...:</b> `1`, `42`, and in some languages `-8`
-      - <b>literal.numeric.integer.octal...:</b> `01`, `052`, and in some languages `-010`
-      - <b>literal.numeric.integer.hex...:</b> `0x1`, `0x2A`, and in some languages `-0x8`
-    - <b>literal.numeric.float...:</b> `1.0`, `4.2`, and in some languages `-8.8`
-    - <b>literal.numeric.exponent...:</b> `e1`, `e42` _(should identify the exponential part of the literal, not the entire literal)_
-  - <b>literal.collection</b>
-    - <b>literal.collection.set...:</b> _(I don't actually know of any language that has a literal construct for a set, but if one does, it would go here)_
-    - <b>literal.collection.array...:</b> `[1, 2, 3]`
-    - <b>literal.collection.dictionary.*::</b> `Hash` in Ruby, `dict` in Python, `array()` in PHP
-  - <b>literal.keyword:</b> _(any value that acts as a keyword but returns a single, known value)_
-    - <b>literal.keyword.bool...:</b> `true`, `false`
-    - <b>literal.keyword.nothing...:</b> `nil`, `NULL`, `undefined`, `NaN`
+- `literal`
+  - `literal.string...`: `"hello world"`
+  - `literal.regex...`: `/^([\w]+).*$/`
+  - `literal.numeric`
+    - `literal.numeric.integer`
+      - `literal.numeric.integer.binary...`: `0b1`, `0b101010`, and in some languages `-0b1000`
+      - `literal.numeric.integer.decimal...`: `1`, `42`, and in some languages `-8`
+      - `literal.numeric.integer.octal...`: `01`, `052`, and in some languages `-010`
+      - `literal.numeric.integer.hex...`: `0x1`, `0x2A`, and in some languages `-0x8`
+    - `literal.numeric.float...`: `1.0`, `4.2`, and in some languages `-8.8`
+    - `literal.numeric.exponent...`: `e1`, `e42` _(should identify the exponential part of the literal, not the entire literal)_
+  - `literal.collection`
+    - `literal.collection.set...`: _(I don't actually know of any language that has a literal construct for a set, but if one does, it would go here)_
+    - `literal.collection.array...`: `[1, 2, 3]`
+    - `literal.collection.dictionary.*:`: `Hash` in Ruby, `dict` in Python, `array()` in PHP
+  - `literal.keyword`: _(any value that acts as a keyword but returns a single, known value)_
+    - `literal.keyword.bool...`: `true`, `false`
+    - `literal.keyword.nothing...`: `nil`, `NULL`, `undefined`, `NaN`
 
 Identifiers
 -----------
@@ -97,14 +97,14 @@ some sort in the language. This isn't restricted to the Object-Oriented
 Language definition of 'object', this also means anything in a language which
 can be referenced in some way.
 
-- <b>identifier</b> 
-  - <b>identifier.function:</b> `func(1, 2, 3)` _(referring to a identifier that points to a specific function - such as a function/method call)_
-    - <b>identifier.function.support...:</b> `malloc()` and `printf()` in C, `strstr()` and `array()` in PHP _(built-in functions)_
-  - <b>identifier.variable...</b>
-    - <b>identifier.variable.constant...:</b> `Var`, `VAR`
-    - <b>identifier.variable.global...:</b> `$var` in Ruby, `$_VAR` in PHP
-    - <b>identifier.variable.instance...:</b> `@var`, `@@var`
-    - <b>identifier.variable.local...:</b> `var`
+- `identifier` 
+  - `identifier.function`: `func(1, 2, 3)` _(referring to a identifier that points to a specific function - such as a function/method call)_
+    - `identifier.function.support...`: `malloc()` and `printf()` in C, `strstr()` and `array()` in PHP _(built-in functions)_
+  - `identifier.variable...`
+    - `identifier.variable.constant...`: `Var`, `VAR`
+    - `identifier.variable.global...`: `$var` in Ruby, `$_VAR` in PHP
+    - `identifier.variable.instance...`: `@var`, `@@var`
+    - `identifier.variable.local...`: `var`
 
 Keywords
 --------
@@ -112,14 +112,14 @@ A keyword is an element defined in the language's definition itself - it can't
 be changed by the programmer, and it usually invokes or references something
 hardcoded into the language's compiler/parser/interpreter.
 
-- <b>keyword</b>
-  - <b>keyword.control:</b> _(used for loops, conditionals and general flow control)_
-    - <b>keyword.control.exception...:</b> `raise`, `rescue`, `ensure`, `throw`, `catch` _(used to manage exceptions)_
-    - <b>keyword.control.flow...:</b> `while`, `for`, `break`, `goto`, `if`/`then`/`else` _(changes the 'direction' of / current location in the executing code)_
-  - <b>keyword.modifier...:</b> _(used for tacking onto declarations)_
-    - <b>keyword.modifier.scope...:</b> `public`, `protected`, `private` _(changes the 'scope' of a particular declaration)_
-  - <b>keyword.definition...:</b> `class`, `function`, `method`, `module`, `begin`, `lambda` _(used for creating or modifying a <b>block...</b> element)_
-  - <b>keyword.type...</b>
+- `keyword`
+  - `keyword.control`: _(used for loops, conditionals and general flow control)_
+    - `keyword.control.exception...`: `raise`, `rescue`, `ensure`, `throw`, `catch` _(used to manage exceptions)_
+    - `keyword.control.flow...`: `while`, `for`, `break`, `goto`, `if`/`then`/`else` _(changes the 'direction' of / current location in the executing code)_
+  - `keyword.modifier...`: _(used for tacking onto declarations)_
+    - `keyword.modifier.scope...`: `public`, `protected`, `private` _(changes the 'scope' of a particular declaration)_
+  - `keyword.definition...`: `class`, `function`, `method`, `module`, `begin`, `lambda` _(used for creating or modifying a `block...` element)_
+  - `keyword.type...`
 
 Vessels
 -------
@@ -128,26 +128,26 @@ in attaching Itemizers, and for the purpose of the subzones. Any syntactical
 construct that is meant to seperate out a piece of code from other code, goes
 here.
 
-- <b>vessel:</b>
-  - <b>vessel.class...</b>
-  - <b>vessel.function...</b>
-  - <b>vessel.block...:</b> `lambda {}` in Ruby, anonymous function in JavaScript, closures in many other languages _(any block of code that acts as exactly that, a block of code)_
+- `vessel`:
+  - `vessel.class...`
+  - `vessel.function...`
+  - `vessel.block...`: `lambda {}` in Ruby, anonymous function in JavaScript, closures in many other languages _(any block of code that acts as exactly that, a block of code)_
 
 Metadata
 --------
 This is mostly for comments - I can't think of anything else to go under this
 heading, but there may be such things.
 
-- <b>metadata...:</b> _(for information that will be ignored by the compiler/interpreter, or has semantic meaning beyond that involved in it's normal execution)_
-  - <b>metadata.comment</b>
-    - <b>metadata.comment.line...</b>
-    - <b>metadata.comment.block...</b>
-    - <b>metadata.comment.documentation...:</b> RDoc/YARD, JavaDoc, phpDocumentor comments _(comments formulated in a way accepted by the community and documentation-generating-tools to be documentation-blocks)_
-      - <b>metadata.comment.documentation.tag...:</b> `@name`, `@description` _(tags of which the widly-accepted documentation-generators are aware, which control the generated documentation)_
-  - <b>metadata.processing:</b> _(anything that changes the way code is compiled/interpreted, but isn't code itself)_
-    - <b>metadata.processing.preprocessor...:</b> `#define`, `#ifdef` _(C-style preprocessor operatives)_
-    - <b>metadata.processing.shebang...:</b> `#!/usr/bin/env ruby -Ku` _(UNIX shell scripting shebangs)_
-    - <b>metadata.processing.magic-comment...</b> `# -*-mode: tcl; fill-column: 75; tab-width: 8; coding: iso-latin-1-unix -*- ` in emacs or `# encoding: utf-8` in Ruby _(other sorts of magic comments that affect the code)_
+- `metadata...`: _(for information that will be ignored by the compiler/interpreter, or has semantic meaning beyond that involved in it's normal execution)_
+  - `metadata.comment`
+    - `metadata.comment.line...`
+    - `metadata.comment.block...`
+    - `metadata.comment.documentation...`: RDoc/YARD, JavaDoc, phpDocumentor comments _(comments formulated in a way accepted by the community and documentation-generating-tools to be documentation-blocks)_
+      - `metadata.comment.documentation.tag...`: `@name`, `@description` _(tags of which the widly-accepted documentation-generators are aware, which control the generated documentation)_
+  - `metadata.processing`: _(anything that changes the way code is compiled/interpreted, but isn't code itself)_
+    - `metadata.processing.preprocessor...`: `#define`, `#ifdef` _(C-style preprocessor operatives)_
+    - `metadata.processing.shebang...`: `#!/usr/bin/env ruby -Ku` _(UNIX shell scripting shebangs)_
+    - `metadata.processing.magic-comment...` `# -*-mode: tcl; fill-column: 75; tab-width: 8; coding: iso-latin-1-unix -*- ` in emacs or `# encoding: utf-8` in Ruby _(other sorts of magic comments that affect the code)_
 
 Operators
 ---------
@@ -156,26 +156,26 @@ are almost always punctuation, whereas keywords are almost always textual.
 There are exceptions to this rule (`and` and `or` are operators, because
 they're simply alternatives to `&&` and `||`), but it's a good generalization.
 
-- <b>operator</b>
-  - <b>operator.comparator...:</b> `<`, `>`, `<=`, `>=`, `==`, `===`
-  - <b>operator.accessor...:</b> `=`, `+=`, `-=`, `*=`, `||=`, as well as `*var` and `&var` from C _(for getters/setters/assignments)_
-  - <b>operator.mathematical...:</b> `+`, `-`, `*`, `/`, `%`
-  - <b>operator.logical...:</b> `!!`, `&&`, `||`, `^`, `!`, `&`, `|`
+- `operator`
+  - `operator.comparator...`: `<`, `>`, `<=`, `>=`, `==`, `===`
+  - `operator.accessor...`: `=`, `+=`, `-=`, `*=`, `||=`, as well as `*var` and `&var` from C _(for getters/setters/assignments)_
+  - `operator.mathematical...`: `+`, `-`, `*`, `/`, `%`
+  - `operator.logical...`: `!!`, `&&`, `||`, `^`, `!`, `&`, `|`
 
 Delimiters
 ----------
 Delimiters are things that, well, delimit. They mark the edges of things,
 where one thing becomes another, or where two things become one.
 
-- <b>delimiter</b>
-  - <b>delimiter.balanced...</b>
-    - <b>delimiter.balanced.quote</b>
-      - <b>delimiter.quote.balanced.double:</b> `"these"`
-      - <b>delimiter.quote.balanced.single:</b> `'these'`
-      - <b>delimiter.quote.balanced.backtick:</b> `` `these` ``
-    - <b>delimiter.balanced.parenthesis:</b> `(these)`
-    - <b>delimiter.balanced.square-brace:</b> `[these]`
-    - <b>delimiter.balanced.curly-brace:</b> `{these}`
-  - <b>delimiter.seperator</b>
-    - <b>delimiter.seperator.property-of...:</b> `::` in ruby
-    - <b>delimiter.seperator.comma:</b> `,`
+- `delimiter`
+  - `delimiter.balanced...`
+    - `delimiter.balanced.quote`
+      - `delimiter.quote.balanced.double`: `"these"`
+      - `delimiter.quote.balanced.single`: `'these'`
+      - `delimiter.quote.balanced.backtick`: `` `these` ``
+    - `delimiter.balanced.parenthesis`: `(these)`
+    - `delimiter.balanced.square-brace`: `[these]`
+    - `delimiter.balanced.curly-brace`: `{these}`
+  - `delimiter.seperator`
+    - `delimiter.seperator.property-of...`: `::` in ruby
+    - `delimiter.seperator.comma`: `,`
