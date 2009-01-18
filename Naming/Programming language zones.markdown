@@ -176,5 +176,5 @@ where one thing becomes another, or where two things become one.
     - `delimiter.balanced.square-brace`: `[these]`
     - `delimiter.balanced.curly-brace`: `{these}`
   - `delimiter.seperator`
-    - `delimiter.seperator.property-of...`: `::` in ruby
+    - `delimiter.seperator.namespace...`: `::` in ruby
     - `delimiter.seperator.comma`: `,`
