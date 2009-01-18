@@ -99,7 +99,6 @@ can be referenced in some way.
 
 - `identifier` 
   - `identifier.function`: `func(1, 2, 3)` _(referring to a identifier that points to a specific function - such as a function/method call)_
-    - `identifier.function.support...`: `malloc()` and `printf()` in C, `strstr()` and `array()` in PHP _(built-in functions)_
   - `identifier.variable...`
     - `identifier.variable.constant...`: `Var`, `VAR`
     - `identifier.variable.global...`: `$var` in Ruby, `$_VAR` in PHP
