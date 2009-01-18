@@ -76,19 +76,19 @@ constant means something else entirely (see `keyword.constant`).
   - `literal.regex...`: `/^([\w]+).*$/`
   - `literal.numeric`
     - `literal.numeric.integer`
-      - `literal.numeric.integer.binary...`: `0b1`, `0b101010`, and in some languages `-0b1000`
-      - `literal.numeric.integer.decimal...`: `1`, `42`, and in some languages `-8`
-      - `literal.numeric.integer.octal...`: `01`, `052`, and in some languages `-010`
-      - `literal.numeric.integer.hex...`: `0x1`, `0x2A`, and in some languages `-0x8`
-    - `literal.numeric.float...`: `1.0`, `4.2`, and in some languages `-8.8`
-    - `literal.numeric.exponent...`: `e1`, `e42` _(should identify the exponential part of the literal, not the entire literal)_
+      - `literal.numeric.integer.binary...`: `0b1, 0b101010`, and in some languages `-0b1000`
+      - `literal.numeric.integer.decimal...`: `1, 42`, and in some languages `-8`
+      - `literal.numeric.integer.octal...`: `01, 052`, and in some languages `-010`
+      - `literal.numeric.integer.hex...`: `0x1, 0x2A`, and in some languages `-0x8`
+    - `literal.numeric.float...`: `1.0, 4.2`, and in some languages `-8.8`
+    - `literal.numeric.exponent...`: `e1, e42` (should identify the exponential part of the literal, not the entire literal)
   - `literal.collection`
-    - `literal.collection.set...`: _(I don't actually know of any language that has a literal construct for a set, but if one does, it would go here)_
+    - `literal.collection.set...`: (I don't actually know of any language that has a literal construct for a set, but if one does, it would go here)
     - `literal.collection.array...`: `[1, 2, 3]`
     - `literal.collection.dictionary.*:`: `Hash` in Ruby, `dict` in Python, `array()` in PHP
-  - `literal.keyword`: _(any value that acts as a keyword but returns a single, known value)_
-    - `literal.keyword.bool...`: `true`, `false`
-    - `literal.keyword.nothing...`: `nil`, `NULL`, `undefined`, `NaN`
+  - `literal.keyword`: (any value that acts as a keyword but returns a single, known value)
+    - `literal.keyword.bool...`: `true, false`
+    - `literal.keyword.nothing...`: `nil, NULL, undefined, NaN`
 
 Handle
 ------
@@ -98,12 +98,12 @@ definition of 'object', this also means anything in a language which can be
 referenced in some way. There are some examples below.
 
 - `handle` 
-  - `handle.function`: `func()` _(referring to a handle that points to a specific function - such as a function/method call)_
-  - `handle.type`: `NSString`, `HTTP`, `Fixnum`, `double` _(an umbrella for 'prototypes', 'classes', 'types', and any other language feature that serves a similar purpose)_
+  - `handle.function`: `func()` (referring to a handle that points to a specific function - such as a function/method call)
+  - `handle.type`: `NSString, HTTP, Fixnum, double` (an umbrella for 'prototypes', 'classes', 'types', and any other language feature that serves a similar purpose)
   - `handle.variable...`
-    - `handle.variable.constant...`: `Var`, `VAR`
+    - `handle.variable.constant...`: `Var, VAR`
     - `handle.variable.global...`: `$var` in Ruby, `$_VAR` in PHP
-    - `handle.variable.instance...`: `@var`, `@@var`
+    - `handle.variable.instance...`: `@var, @@var`
     - `handle.variable.local...`: `var`
 
 Keywords
@@ -113,12 +113,12 @@ be changed by the programmer, and it usually invokes or references something
 hardcoded into the language's compiler/parser/interpreter.
 
 - `keyword`
-  - `keyword.control`: _(used for loops, conditionals and general flow control)_
-    - `keyword.control.exception...`: `raise`, `rescue`, `ensure`, `throw`, `catch` _(used to manage exceptions)_
-    - `keyword.control.flow...`: `while`, `for`, `break`, `goto`, `if`/`then`/`else`, `begin...end` _(changes the 'direction' of / current location in the executing code)_
-  - `keyword.modifier...`: _(used for tacking onto declarations)_
-    - `keyword.modifier.scope...`: `public`, `protected`, `private` _(changes the 'scope' of a particular declaration)_
-  - `keyword.definition...`: `class`, `function`, `method`, `module`, `lambda` _(used for creating or modifying a `vessel`)_
+  - `keyword.control`: (used for loops, conditionals and general flow control)
+    - `keyword.control.exception...`: `raise, rescue, ensure, throw, catch` (used to manage exceptions)
+    - `keyword.control.flow...`: `while, for, break, goto, if`/`then`/`else, begin...end` (changes the 'direction' of / current location in the executing code)
+  - `keyword.modifier...`: (used for tacking onto declarations)
+    - `keyword.modifier.scope...`: `public, protected, private` (changes the 'scope' of a particular declaration)
+  - `keyword.definition...`: `class, function, method, module, lambda` (used for creating or modifying a `vessel`)
 
 Vessels
 -------
@@ -130,22 +130,22 @@ here.
 - `vessel`:
   - `vessel.class...`
   - `vessel.function...`
-  - `vessel.block...`: `lambda {}` in Ruby, anonymous function in JavaScript, closures in many other languages _(any block of code that acts as exactly that, a block of code)_
+  - `vessel.block...`: `lambda {}` in Ruby, anonymous function in JavaScript, closures in many other languages (any block of code that acts as exactly that, a block of code)
 
 Metadata
 --------
 This is mostly for comments - I can't think of anything else to go under this
 heading, but there may be such things.
 
-- `metadata...`: _(for information that will be ignored by the compiler/interpreter, or has semantic meaning beyond that involved in it's normal execution)_
+- `metadata...`: (for information that will be ignored by the compiler/interpreter, or has semantic meaning beyond that involved in it's normal execution)
   - `metadata.type-signature`: `map :: (a -> b) -> [a] -> [b]` from Haskell
   - `metadata.comment`
     - `metadata.comment.line...`
     - `metadata.comment.block...`
-    - `metadata.comment.documentation...`: RDoc/YARD, JavaDoc, phpDocumentor comments _(comments formulated in a way accepted by the community and documentation-generating-tools to be documentation-blocks)_
-  - `metadata.processing...`: `#define`, `#ifdef` _(anything that changes the way code is compiled/interpreted, but isn't code itself)_
-    - `metadata.processing.comment...` `# -*-mode: tcl; fill-column: 75; tab-width: 8; coding: iso-latin-1-unix -*- ` in emacs or `# encoding: utf-8` in Ruby _(other sorts of magic comments that affect the code)_
-      - `metadata.processing.comment.shebang`: `#!/usr/bin/env ruby -Ku` _(UNIX shell scripting shebangs)_
+    - `metadata.comment.documentation...`: RDoc/YARD, JavaDoc, phpDocumentor comments (comments formulated in a way accepted by the community and documentation-generating-tools to be documentation-blocks)
+  - `metadata.processing...`: `#define, #ifdef` (anything that changes the way code is compiled/interpreted, but isn't code itself)
+    - `metadata.processing.comment...` `# -*-mode: tcl; fill-column: 75; tab-width: 8; coding: iso-latin-1-unix -*- ` in emacs or `# encoding: utf-8` in Ruby (other sorts of magic comments that affect the code)
+      - `metadata.processing.comment.shebang`: `#!/usr/bin/env ruby -Ku` (UNIX shell scripting shebangs)
 
 Operators
 ---------
@@ -155,10 +155,10 @@ There are exceptions to this rule (`and` and `or` are operators, because
 they're simply alternatives to `&&` and `||`), but it's a good generalization.
 
 - `operator`
-  - `operator.comparator...`: `<`, `>`, `<=`, `>=`, `==`, `===`
-  - `operator.accessor...`: `=`, `+=`, `-=`, `*=`, `||=`, as well as `*var` and `&var` from C _(for getters/setters/assignments)_
-  - `operator.mathematical...`: `+`, `-`, `*`, `/`, `%`
-  - `operator.logical...`: `!!`, `&&`, `||`, `^`, `!`, `&`, `|`
+  - `operator.comparator...`: `<, >, <=, >=, ==, ===`
+  - `operator.accessor...`: `=, +=, -=, *=, ||=`, as well as `*var` and `&var` from C (for getters/setters/assignments)
+  - `operator.mathematical...`: `+, -, *, /, %`
+  - `operator.logical...`: `!!, &&, ||, ^, !, &, |`
 
 Delimiters
 ----------
