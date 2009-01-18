@@ -3,9 +3,9 @@ Espresso Sugar Standards
 This repository is a small attempt to see the creation of Espresso sugars
 standardized.
 
-You are under no obligation to follow the naming conventions indicated herein,
-but the hope is that if most of us do so, that the vast majority of Espresso
-themes will play well with the vast majority of Espresso Sugars.
+You are under no obligation to follow the conventions documented herein, but
+my hope is that if most of us Sugar developers do so, that the vast majority
+of Espresso themes will play well with the vast majority of Espresso Sugars.
 
 Ownership
 ---------
@@ -24,7 +24,7 @@ points of view unless I consider them especially compelling).
 
 Commenting
 ----------
-One thing worth noting - if you want to comment on the document's changesets
+One thing worth noting — if you want to comment on the document's changesets
 please do so using GitHub's commenting system:
 
 - Comment on the appropriate line or section.
@@ -35,5 +35,5 @@ please do so using GitHub's commenting system:
   - If your comment is about the structure / conceptualization of the entire
     document at the stage of a given commit, comment on the entire commit
 - Don't enumerate all of your points / arguments in a single comment, it's a
-  real pain to read - instead, split it up among the relevant lines or
+  real pain to read — instead, split it up among the relevant lines or
   sections if at all possible
