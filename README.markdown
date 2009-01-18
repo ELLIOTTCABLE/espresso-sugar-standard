@@ -1,5 +1,10 @@
 Espresso Sugar Standards
 ========================
+
+- [Zone naming: Programming languages](../blob/master/Naming/Programming%20language%20zones.markdown)
+- [Zone naming: Markup languages](../blob/master/Naming/Markup%20language%20zones.markdown)
+- [Capture naming](../blob/master/Naming/Captures.markdown)
+
 This repository is a small attempt to see the creation of [Espresso][] [Sugars][]
 standardized.
 
