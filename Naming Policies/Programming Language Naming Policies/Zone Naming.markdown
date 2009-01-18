@@ -1,4 +1,71 @@
-# Literals
+Programming Language Naming Policies — Zone Naming
+==================================================
+This document's purpose is to regulate the 'naming' of [syntax 'zones'][] in
+[Espresso][] [Sugars][]. Each 'zone' in an Espresso Sugar has it's own,
+unique, identifier. This identifier is composed of 'classes', separated by
+periods.
+
+Themes written for Espresso can then attach syntax highlighting instructions
+to zones by 'selecting' them with CSS selectors. Selectors can be applied to
+any combination of the classes used in zone identifiers. We are attempting to
+regulate the basic categories of classes, so that most themes written for
+Espresso will 'work' with as many Sugars as possible — that is, it will
+correctly highlight syntax 'zones' as intended by the theme author.
+
+### Sugar Authors
+If you're going to apply this standard to your sugars, *please* either follow
+all of it or none of it. The entire purpose of this document will be
+invalidated if you pick and choose which classes you like and which you don't.
+
+Also, avoid utilizing ad-hoc class names in this tree — for instance, if your
+language has a syntactical construct called a 'tuple', don't frivolously give
+the zone an identifier of "literal.collection.tuple", as that doesn't
+currently exist in the specification. If another Sugar author also needs a
+tuple, they might instead decide to identify it as "literal.tuple" — then a
+themer has to make their theme use both of those informal categories to
+highlight tuples in all languages.
+
+Certain categories *do* allow extension, these categories' names end with a
+'.*' in the spec. You're free to add language-specific extensions to the end
+of these identifiers; due to the nature of Espresso's selector system, themes
+will still correctly target your elements as long as you have all of the
+classes from the spec in your identifier. In the above example, you could
+instead identify your 'tuple' element with an extension to the
+"literal.collection.set" category (which allows extension, as you can see
+below), such as "literal.collection.set.tuple".
+
+If you believe that an element of syntax from the programming language that
+you are writing a Sugar for simply does not fit in any existing category on
+this tree, nor do you believe is it a variation upon one of the extensible
+categories, you may add a temporary class with an `x-` prefix to indicate that
+you expect that category to be added in the near future. For instance, in the
+above example, if you really didn't believe that a 'tuple' was anything like
+a "literal.collection.set" as defined by this document, you could utilize an
+identifier of "literal.collection.x-tuple". This indicates to themers
+(see below) that they shouldn't theme this class until it is accepted into
+the spec.
+
+If you would like to see classes added to this spec, feel free to contact me
+(elliottcable) with a request. I'm quite happy to see this spec expanded to
+support as many languages as possible, but I do not want to add any classes
+that can map cleanly to an existing class, as that induces confusion.
+
+### Themers
+If you're writing a theme, and want to support Sugars that use this spec, you
+needn't actually look at the Sugar's source code. If it truly follows this
+spec, you need only add CSS selectors for each of the below class trees, and
+style them as you desire.
+
+If you read the section above (intended for Sugar Authors), you'll probably
+realize that you should **not** style any class in any Sugar when the class
+starts with `x-`. This ensures your theme will work with as many sugars as
+possible.
+
+Specification
+=============
+
+Literals
+--------
 A literal is an element that is directly typed into the source code. In
 some languages, these might be called constants - however, I consider that too
 ambiguous, as most languages which Espresso users will often come across, a
@@ -23,7 +90,8 @@ constant means something else entirely (see `keyword.constant`).
     - <b>literal.keyword.bool.\*:</b> `true`, `false`
     - <b>literal.keyword.nothing.\*:</b> `nil`, `NULL`, `undefined`, `NaN`
 
-# Identifiers
+Identifiers
+-----------
 An identifier is a syntatical element that uniquely identifies one object of
 some sort in the language. This isn't restricted to the Object-Oriented
 Language definition of 'object', this also means anything in a language which
@@ -38,7 +106,8 @@ can be referenced in some way.
     - <b>identifier.variable.instance.\*:</b> `@var`, `@@var`
     - <b>identifier.variable.local.\*:</b> `var`
 
-# Keywords
+Keywords
+--------
 A keyword is an element defined in the language's definition itself - it can't
 be changed by the programmer, and it usually invokes or references something
 hardcoded into the language's compiler/parser/interpreter.
@@ -52,7 +121,8 @@ hardcoded into the language's compiler/parser/interpreter.
   - <b>keyword.definition.\*:</b> `class`, `function`, `method`, `module`, `begin`, `lambda` _(used for creating or modifying a <b>block.\*</b> element)_
   - <b>keyword.type.\*</b>
 
-# Vessels
+Vessels
+-------
 These are less being defined for the purpose of highlighting, and more for use
 in attaching Itemizers, and for the purpose of the subzones. Any syntactical
 construct that is meant to seperate out a piece of code from other code, goes
@@ -63,7 +133,8 @@ here.
   - <b>vessel.function.\*</b>
   - <b>vessel.block.\*:</b> `lambda {}` in Ruby, anonymous function in JavaScript, closures in many other languages _(any block of code that acts as exactly that, a block of code)_
 
-# Metadata
+Metadata
+--------
 This is mostly for comments - I can't think of anything else to go under this
 heading, but there may be such things.
 
@@ -78,7 +149,8 @@ heading, but there may be such things.
     - <b>metadata.processing.shebang.\*:</b> `#!/usr/bin/env ruby -Ku` _(UNIX shell scripting shebangs)_
     - <b>metadata.processing.magic-comment.\*</b> `# -*-mode: tcl; fill-column: 75; tab-width: 8; coding: iso-latin-1-unix -*- ` in emacs or `# encoding: utf-8` in Ruby _(other sorts of magic comments that affect the code)_
 
-# Operators
+Operators
+---------
 The difference between operators and keywords bears some discussing. Operators
 are almost always punctuation, whereas keywords are almost always textual.
 There are exceptions to this rule (`and` and `or` are operators, because
@@ -90,7 +162,8 @@ they're simply alternatives to `&&` and `||`), but it's a good generalization.
   - <b>operator.mathematical.\*:</b> `+`, `-`, `*`, `/`, `%`
   - <b>operator.logical.\*:</b> `!!`, `&&`, `||`, `^`, `!`, `&`, `|`
 
-# Delimiters
+Delimiters
+----------
 Delimiters are things that, well, delimit. They mark the edges of things,
 where one thing becomes another, or where two things become one.
 
