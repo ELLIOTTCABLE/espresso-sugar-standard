@@ -108,9 +108,6 @@ This is an array of dependency elements, each of which references the
 identifier of a Sugar upon which this Sugar depends. Dependencies will be
 automatically installed first if found, and this sugar will marked as
 unavailable if it's dependencies are not found / unavailable.
-
-This tag may be omitted, or left empty. Both will be assumed to mean that this
-Sugar will work without any dependencies.
     
     <dependencies>
       <dependency id="name.elliottcable.Sugar.Python">Python</dependency>
@@ -127,8 +124,6 @@ before installation.
 
 This tag may also appear more than once, though that should be avoided. Order
 of execution is not guaranteed.
-
-This tag may be omitted.
     
     <script interpreter="/bin/sh">/usr/bin/xcodebuild</script>
     
@@ -137,9 +132,6 @@ If it is not sufficient for your sugar to be copied verbatim into the Sugars
 directory as-is, such as if your sugar is compressed into a sub-directory or
 your sugar has to be compiled and then copied from a build folder, then you
 should define a relative path to your *actual* `.sugar` folder here.
-
-This tag may be omitted. It will default to copying this entire root directory
-into the sugars directory.
     
     <build-directory>build/Release/Sugar Manager.sugar</build-directory>
     
