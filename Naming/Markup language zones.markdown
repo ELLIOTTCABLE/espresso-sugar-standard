@@ -43,6 +43,6 @@ Anything that affects the content of the document, but isn't an actual part of
 the text of the document.
 
 - `metadata`
-  - `metadata.comment...:` `<!-- a comment -->`
-  - `metadata.processing...:` anything in HTML's `<head>` block (things which are in the document, and change the processing of the document, but aren't actual text)
+  - `metadata.comment...`: `<!-- a comment -->`
+  - `metadata.processing...`: anything in HTML's `<head>` block (things which are in the document, and change the processing of the document, but aren't actual text)
     - `metadata.processing.title`

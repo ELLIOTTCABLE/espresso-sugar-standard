@@ -118,7 +118,7 @@ hardcoded into the language's compiler/parser/interpreter.
     - `keyword.control.flow...`: `while, for, break, goto, if`/`then`/`else, begin...end` (changes the 'direction' of / current location in the executing code)
   - `keyword.modifier...`: (used for tacking onto declarations)
     - `keyword.modifier.scope...`: `public, protected, private` (changes the 'scope' of a particular declaration)
-  - `keyword.definition...`: `class, function, method, module, lambda` (used for creating or modifying a `vessel`)
+  - `keyword.definition...`: `class, function, method, module, lambda` (used for creating or modifying a container)
 
 Containers
 ----------
