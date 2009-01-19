@@ -21,9 +21,9 @@ These markup elements lend structure to the page, in a specifically semantic
 (not just visual) way.
 
 - `structural`
-  - `structural.vessel...`
-    - `structural.vessel.section...`: `<div>some stuff</div>` (any element referring to a section of a document)
-    - `structural.vessel.paragraph`: `<p>Hi, I'm some text!</p>` (any element referring specifically to a paragraph of text)
+  - `structural.container...`
+    - `structural.container.section...`: `<div>some stuff</div>` (any element referring to a section of a document)
+    - `structural.container.paragraph`: `<p>Hi, I'm some text!</p>` (any element referring specifically to a paragraph of text)
   - `structural.header...`
     - `structural.header.title`: `<h1>a title</h1>, a title\n=======` (any title header)
     - `structural.header.section`: `<h2>a section</h2>, a section\n---------` (any section header)
