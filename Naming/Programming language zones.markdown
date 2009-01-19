@@ -97,7 +97,7 @@ some sort in the language. This isn't restricted to the Object-Oriented
 Language definition of 'object', this also means anything in a language which
 can be referenced in some way.
 
-- `identifier` 
+- `identifier`
   - `identifier.function`: `func(1, 2, 3)` _(referring to a identifier that points to a specific function - such as a function/method call)_
   - `identifier.type`: `NSString`, `HTTP`, `Fixnum`, `double` _(an umbrella for 'prototypes', 'classes', 'types', and any other language feature that serves a similar purpose)_
   - `identifier.variable...`
