@@ -85,7 +85,7 @@ constant means something else entirely (see `keyword.constant`).
   - `literal.collection`
     - `literal.collection.set...`: (I don't actually know of any language that has a literal construct for a set, but if one does, it would go here)
     - `literal.collection.array...`: `[1, 2, 3]`
-    - `literal.collection.dictionary.*:`: `Hash` in Ruby, `dict` in Python, `array()` in PHP
+    - `literal.collection.dictionary...`: `Hash` in Ruby, `dict` in Python, `array()` in PHP
   - `literal.keyword`: (any value that acts as a keyword but returns a single, known value)
     - `literal.keyword.bool...`: `true, false`
     - `literal.keyword.nothing...`: `nil, NULL, undefined, NaN`
