@@ -35,11 +35,14 @@ Miscellaneous
 Other stuff. This needs a better name. **Unfinished!**
 
 - `miscellaneous`
-  - `miscellaneous.connection.*`: `<a href='http://google.com/'>Google</a>` (any connection to something else, internal or external)
+  - `miscellaneous.connection...`: `<a href='http://google.com/'>Google</a>` (any connection to something else, internal or external)
 
 Metadata
 --------
 Anything that affects the content of the document, but isn't an actual part of
-the text of the document. Think HTML's `<head>` element's contents. **Unfinished!**
+the text of the document.
 
-- `metadata...`
+- `metadata`
+  - `metadata.comment...:` `<!-- a comment -->`
+  - `metadata.processing...:` anything in HTML's `<head>` block (things which are in the document, and change the processing of the document, but aren't actual text)
+    - `metadata.processing.title`
