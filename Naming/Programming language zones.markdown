@@ -89,6 +89,9 @@ constant means something else entirely (see `keyword.constant`).
   - `literal.keyword`: (any value that acts as a keyword but returns a single, known value)
     - `literal.keyword.bool...`: `true, false`
     - `literal.keyword.nothing...`: `nil, NULL, undefined, NaN`
+  - `literal.escape...`: `\e, \{, \!`
+    - `literal.escape.linebreak` `\n, \r\n, \x0D\x0A, PHP_EOL`
+    - `literal.escape.tab` `\t`
 
 Identifiers
 -----------
