@@ -71,7 +71,7 @@ some languages, these might be called constants - however, I consider that too
 ambiguous, as most languages which Espresso users will often come across, a
 constant means something else entirely (see `keyword.constant`).
 
-- `literal`
+- `literal...`
   - `literal.string...`: `"hello world"`
   - `literal.regex...`: `/^([\w]+).*$/`
   - `literal.numeric`
