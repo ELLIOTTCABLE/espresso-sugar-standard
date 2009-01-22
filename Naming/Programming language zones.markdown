@@ -108,6 +108,7 @@ can be referenced in some way.
     - `identifier.variable.global...`: `$var` in Ruby, `$_VAR` in PHP
     - `identifier.variable.instance...`: `@var`, `@@var`
     - `identifier.variable.local...`: `var`
+    - `identifier.variable.parameter...`: `var` in the context of a method definition
 
 Keywords
 --------
