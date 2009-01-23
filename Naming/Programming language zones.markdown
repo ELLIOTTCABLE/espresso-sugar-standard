@@ -73,7 +73,7 @@ constant means something else entirely (see `keyword.constant`).
 
 - `literal...`
   - `literal.string...`: `"hello world"`
-  - `literal.string.heredoc`
+  - `literal.string.heredoc...`
   - `literal.regex...`: `/^([\w]+).*$/`
   - `literal.numeric`
     - `literal.numeric.integer`
