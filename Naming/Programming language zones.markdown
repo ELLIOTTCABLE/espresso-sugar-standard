@@ -173,9 +173,9 @@ where one thing becomes another, or where two things become one.
 - `delimiter`
   - `delimiter.balanced...`
     - `delimiter.balanced.quote`
-      - `delimiter.quote.balanced.double`: `"these"`
-      - `delimiter.quote.balanced.single`: `'these'`
-      - `delimiter.quote.balanced.backtick`: `` `these` ``
+      - `delimiter.balanced.quote.double`: `"these"`
+      - `delimiter.balanced.quote.single`: `'these'`
+      - `delimiter.balanced.quote.backtick`: `` `these` ``
     - `delimiter.balanced.parenthesis`: `(these)`
     - `delimiter.balanced.square-brace`: `[these]`
     - `delimiter.balanced.curly-brace`: `{these}`
