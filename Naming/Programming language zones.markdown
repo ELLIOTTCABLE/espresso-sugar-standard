@@ -132,10 +132,16 @@ in attaching Itemizers, and for the purpose of the subzones. Any syntactical
 construct that is meant to seperate out a piece of code from other code, goes
 here.
 
+Worth noting: oftentimes a `container.expression` is also a
+`container.statement`. In these situations, it's appropriate to "stack" them
+into `container.expression.statement`.
+
 - `container`:
   - `container.class...`
   - `container.function...`
   - `container.block...`: `lambda {}` in Ruby, anonymous function in JavaScript, closures in many other languages (any block of code that acts as exactly that, a block of code)
+  - `container.expression...`
+  - `container.statement...`
 
 Metadata
 --------
