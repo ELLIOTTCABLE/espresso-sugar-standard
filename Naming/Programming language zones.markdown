@@ -174,14 +174,8 @@ where one thing becomes another, or where two things become one.
 
 - `delimiter`
   - `delimiter.balanced...`
-    - `delimiter.balanced.quote`
-      - `delimiter.balanced.quote.double`: `"these"`
-      - `delimiter.balanced.quote.single`: `'these'`
-      - `delimiter.balanced.quote.backtick`: `` `these` ``
-    - `delimiter.balanced.parenthesis`: `(these)`
-    - `delimiter.balanced.square-brace`: `[these]`
-    - `delimiter.balanced.curly-brace`: `{these}`
-    - `delimiter.balanced.angle-brace`: `<these>`
+    - `delimiter.balanced.quote...`: `'...', "..."` in Ruby, denoting a quoted string of some sort
+    - `delimiter.balanced.bracket...`: `[...], {...}` in Ruby, denoting a contained bit of something
   - `delimiter.seperator...`
     - `delimiter.seperator.namespace...`: `::` in ruby
     - `delimiter.seperator.comma`: `,`
