@@ -40,3 +40,19 @@ the text of the document.
     - `metadata.comment.documentation...`
   - `metadata.processing...`: (things which are in the document, and change the processing of the document, but aren't actual text)
     - `metadata.processing.version` `<!DOCTYPE HTML>`, `%YAML 1.2\n---` (declarations that describe the content type, and possible specific version of the content type, of the document)
+
+Delimiters
+----------
+Delimiters are things that, well, delimit. They mark the edges of things,
+where one thing becomes another, or where two things become one.
+
+- `delimiter`
+  - `delimiter.balanced...`
+    - `delimiter.balanced.quote...`: `'...', "..."` in XML's attributes, denoting a quoted string of some sort
+    - `delimiter.balanced.bracket...`: `<...>` in XML, denoting a contained bit of something
+  - `delimiter.separator...`
+    - `delimiter.separator.namespace...`: `:` in XML's tag names
+    - `delimiter.separator.pairing...`
+      - `delimiter.separator.pairing.content-value`: `:` in YAML
+      - `delimiter.separator.pairing.attribute-value`: `=` in XML's attribute definitions
+  - `delimiter.terminator`: `;` in most languages
