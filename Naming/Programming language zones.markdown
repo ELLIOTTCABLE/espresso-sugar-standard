@@ -132,10 +132,6 @@ in attaching Itemizers, and for the purpose of the subzones. Any syntactical
 construct that is meant to seperate out a piece of code from other code, goes
 here.
 
-Worth noting: oftentimes a `container.expression` is also a
-`container.statement`. In these situations, it's appropriate to "stack" them
-into `container.expression.statement`.
-
 - `container`:
   - `container.class...`
   - `container.function...`
