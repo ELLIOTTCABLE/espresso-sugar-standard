@@ -1,19 +1,7 @@
-Markup language zone naming policies
-====================================
+Declarative language zone naming policies
+=========================================
 See the header of [programming language zone naming policies.markdown](./Programming%20language%20zones.markdown)
 for some important notes.
-
-Stylistic
----------
-This section is for elements of markup that are purely presentational.
-
-- `stylistic`
-  - `stylistic.color`
-  - `stylistic.typography`: `<font>this is different!</font>`
-    - `stylistic.typography.weight...`: `*bold*, <b>bold</b>, [b]bold[/b]` (for elements that specifically change the weight of an element)
-    - `stylistic.typography.variant...`: `^super^, <sup>super</sup>` (for elements that change which variant of a type family is used - superscript, subscript, italic, display, header, thin, etc)
-      - `stylistic.typography.variant.slant...`: `_italic_, <i>italic</i>` (used to display italics and obliques)
-    - `stylistic.typography.size...`: `<big>huge</big>, <small>tiny</small>` (used to change the point size of a typeface)
 
 Structural
 ----------
