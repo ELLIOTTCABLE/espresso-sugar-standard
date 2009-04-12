@@ -2,7 +2,7 @@ Espresso Sugar Standards
 ========================
 
 - [Zone naming: Programming languages](../blob/master/Naming/Programming%20language%20zones.markdown)
-- [Zone naming: Declarative languages](../blob/master/Naming/Declarative%20language%20zones.markdown)
+- [Zone naming: Markup languages](../blob/master/Naming/Markup%20language%20zones.markdown)
 - [Capture naming](../blob/master/Naming/Captures.markdown)
 - [Languages.xml extensions](../blob/master/Languages.xml%20extensions.markdown)
 
