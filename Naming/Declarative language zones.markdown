@@ -18,6 +18,7 @@ These markup elements lend structure to the page, in a specifically semantic
     - `structural.header.tertiary...`: `<h3>Unimportant</h3>, <h5>Unimportant</h5>` (for any header that isn't a title nor a section header)
   - `structural.seperator...`: `<hr/>, --------`
   - `structural.connector...`: `<a href='http://google.com/'>Google</a>` (any connection between two documents or two locations in documents, internal or external)
+  - `structural.context...`: `Here's some <em>emphasized</em> stuff, in <abbr>HTML</abbr>`(provides context for some content; usually an inline element)
 
 Metadata
 --------
