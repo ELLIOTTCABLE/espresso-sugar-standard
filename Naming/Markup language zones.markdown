@@ -27,7 +27,7 @@ These markup elements lend structure to the page, in a specifically semantic
   - `structural.header...`
     - `structural.header.title`: `<h1>a title</h1>, a title\n=======` (any title header)
     - `structural.header.section`: `<h2>a section</h2>, a section\n---------` (any section header)
-    - `structural.header.tertiary...`: `<h3>Unimportent</h3>, <h5>Unimportent</h5>` (for any header that isn't a title nor a section header)
+    - `structural.header.tertiary...`: `<h3>Unimportant</h3>, <h5>Unimportant</h5>` (for any header that isn't a title nor a section header)
   - `structural.seperator...`: `<hr/>, --------`
   - `structural.connection...`: `<a href='http://google.com/'>Google</a>` (any connection between two documents or two locations in documents, internal or external)
 
