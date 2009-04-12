@@ -181,6 +181,7 @@ where one thing becomes another, or where two things become one.
     - `delimiter.balanced.parenthesis`: `(these)`
     - `delimiter.balanced.square-brace`: `[these]`
     - `delimiter.balanced.curly-brace`: `{these}`
+    - `delimiter.balanced.angle-brace`: `<these>`
   - `delimiter.seperator...`
     - `delimiter.seperator.namespace...`: `::` in ruby
     - `delimiter.seperator.comma`: `,`
