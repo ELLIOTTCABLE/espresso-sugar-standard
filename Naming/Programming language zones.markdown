@@ -176,7 +176,7 @@ where one thing becomes another, or where two things become one.
   - `delimiter.balanced...`
     - `delimiter.balanced.quote...`: `'...', "..."` in Ruby, denoting a quoted string of some sort
     - `delimiter.balanced.bracket...`: `[...], {...}` in Ruby, denoting a contained bit of something
-  - `delimiter.seperator...`: `,` in Ruby's arrays
-    - `delimiter.seperator.namespace...`: `::` in Ruby
-    - `delimiter.seperator.pairing...`: `=>` in Ruby, ':' in JSON
+  - `delimiter.separator...`: `,` in Ruby's arrays
+    - `delimiter.separator.namespace...`: `::` in Ruby
+    - `delimiter.separator.pairing...`: `=>` in Ruby, ':' in JSON
   - `delimiter.terminator`: `;` in most languages
