@@ -180,4 +180,4 @@ where one thing becomes another, or where two things become one.
     - `delimiter.seperator.namespace...`: `::` in Ruby
     - `delimiter.seperator.comma`: `,`
     - `delimiter.seperator.pairing...`: `=>` in Ruby, ':' in JSON
-  - `delimiter.terminator`
+  - `delimiter.terminator`: `;` in most languages
