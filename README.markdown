@@ -16,17 +16,6 @@ of Espresso themes will play well with the vast majority of Espresso Sugars.
   [Espresso]: <http://macrabbit.com/espresso/> "MacRabbit's Espresso text editor"
   [Sugars]: <http://macrabbit.com/espresso/extend/> "Sugar plug-ins for Espresso"
 
-Usage
------
-Don't utilize this repository in your Sugar development, everything here is in
-a state of flux. Each 'finished' release will be posted to the forums, please
-build your sugars by the rules provided there. After a 'finished' release,
-changes will continue to be made to this repository, which will be then
-released as a new 'version' of the specification. Sugar developers and themers
-should only work off of the latest release version, and they should mention
-which version they adhere to (so that a user can tell which themes will fully
-style which Sugars).
-
 Ownership
 ---------
 Primarily, this is a repository created by myself (elliottcable) to display
@@ -45,18 +34,9 @@ points of view unless I consider them especially compelling).
   [Ruby.sugar]: <http://github.com/elliottcable/ruby.sugar/> "elliottcable's Ruby.sugar on GitHub"
   [Regex.sugar]: <http://github.com/elliottcable/regex.sugar/> "elliottcable's Regex.sugar on GitHub"
 
-Commenting
-----------
-One thing worth noting — if you want to comment on the document's changesets
-please do so using GitHub's commenting system:
+More information
+----------------
+You can reach me (elliottcable, the author of this project) in the Espresso
+IRC channel almost 24/7:
 
-- Comment on the appropriate line or section.
-  - If your comment is about a specific identifier, comment on that
-    identifier's line
-  - If your comment is about a specific section, comment on that section's
-    header's line
-  - If your comment is about the structure / conceptualization of the entire
-    document at the stage of a given commit, comment on the entire commit
-- Don't enumerate all of your points / arguments in a single comment, it's a
-  real pain to read — instead, split it up among the relevant lines or
-  sections if at all possible
+> [##Espresso](irc://chat.freenode.net/##Espresso) on [Freenode](http://freenode.net/ "Freenode IRC network") ([open in browser](http://widget.mibbit.com/?settings=54db06d9920299f628121bb397aaa524&server=chat.freenode.net&channel=%23%23Espresso&noServerNotices=true&noServerMotd=true&autoConnect=true "Mibbit IRC gateway for ##Espresso"))
