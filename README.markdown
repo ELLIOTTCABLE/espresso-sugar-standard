@@ -34,6 +34,12 @@ points of view unless I consider them especially compelling).
   [Ruby.sugar]: <http://github.com/elliottcable/ruby.sugar/> "elliottcable's Ruby.sugar on GitHub"
   [Regex.sugar]: <http://github.com/elliottcable/regex.sugar/> "elliottcable's Regex.sugar on GitHub"
 
+The contents of this project are released for public usage under the terms of the Creative Commons
+[CC-BY 4.0][] license; more information is available in [COPYING][].
+
+   [CC-BY 4.0]: <http://creativecommons.org/licenses/by/4.0>
+   [COPYING]: <./COPYING.markdown>
+
 More information
 ----------------
 You can reach me (elliottcable, the author of this project) in the Espresso
