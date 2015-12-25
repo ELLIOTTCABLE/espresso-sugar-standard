@@ -1,4 +1,4 @@
-Espresso Sugar Standards
+Espresso Sugar Standards <img alt='Maintenance status' src="https://img.shields.io/badge/maintained%3F-historical-lightgrey.svg?style=flat"><img src="http://elliottcable.s3.amazonaws.com/p/8x8.png"><a target="_blank" href="COPYING.markdown"><img alt='Open-source licensing details' src="https://img.shields.io/badge/license-CC--BY 4.0-blue.svg?style=flat"></a><img src="http://elliottcable.s3.amazonaws.com/p/8x8.png"><a target="_blank" href="http://ell.io/IRC"><img alt='Chat on Freenode' src="https://img.shields.io/badge/chat-IRC-blue.svg"></a>
 ========================
 
 - [Zone naming: Programming languages](../blob/master/Naming/Programming%20language%20zones.markdown)
